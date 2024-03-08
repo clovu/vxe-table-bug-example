@@ -11,9 +11,9 @@ dependencies:
   vue-router:
     specifier: ^4.3.0
     version: 4.3.0(vue@3.4.20)
-  vxe-table:
-    specifier: ^4.5.20
-    version: 4.5.20(vue@3.4.20)(xe-utils@3.5.20)
+  vxe-table-cfc:
+    specifier: 4.5.20-cfc-beta1
+    version: 4.5.20-cfc-beta1(vue@3.4.20)(xe-utils@3.5.20)
 
 devDependencies:
   '@vitejs/plugin-vue':
@@ -732,8 +732,8 @@ packages:
       '@vue/shared': 3.4.20
       typescript: 5.3.3
 
-  /vxe-table@4.5.20(vue@3.4.20)(xe-utils@3.5.20):
-    resolution: {integrity: sha512-UC+z1ED3QE6Be/UN0390hSXMAseXg+com3fkX9q3tjfsCGFx7CjN9tLstuNtecn+ElkPGHqzRGtA3N5FTSv5Vw==}
+  /vxe-table-cfc@4.5.20-cfc-beta1(vue@3.4.20)(xe-utils@3.5.20):
+    resolution: {integrity: sha512-Dtj4rJiM7zh/Ff9wXVDvtgMi5UKL4wYiPDg9iirbtggojQ7Jz/LDx58pk5XEUIJXqnjLIdQ+yDNRmNz0Mwi6lw==}
     peerDependencies:
       vue: ^3.2.28
       xe-utils: ^3.5.0
