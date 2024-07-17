@@ -1,12 +1,20 @@
 import { App } from "vue";
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: '/two-rows-of-the-same-data-when-a-new-row-is-insertee-when-layz-enable',
-      component: () => import('../views/two-rows-of-the-same-data-when-a-new-row-is-insertee-when-layz-enable.vue')
+      // 懒加载 tree table，通过 insert 函数新增数据会插入重复数据 
+      // https://github.com/x-extends/vxe-table/issues/2320
+      path: '/2320',
+      component: () => import('../views/2320.vue')
+    },
+    {
+      // 如果存在新增数据，getRowIndex 函数返回的行号错乱
+      // https://github.com/x-extends/vxe-table/issues/2479
+      path: '/2479',
+      component: () => import('../views/2479.vue')
     }
   ]
 })

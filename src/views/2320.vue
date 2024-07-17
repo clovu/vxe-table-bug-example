@@ -1,15 +1,15 @@
 <template>
   <div>
-    <Button @click="insertRow">新增一行</Button>
-    <Button @click="getCurerntData">获取当前数据</Button>
+    <VxeButton @click="insertRow">新增一行</VxeButton>
+    <VxeButton @click="getCurerntData">获取当前数据</VxeButton>
 
     <VxeGrid ref="gridRef" v-bind="vxeGridProps"></VxeGrid>
   </div>
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from "vue"
-import { Button, VxeGrid, VxeGridInstance, VxeGridProps } from "vxe-table"
+import { reactive, ref } from "vue";
+import { VxeGrid, VxeGridInstance, VxeGridProps } from "vxe-table";
 
 const { gridRef, vxeGridProps, insertRow, getCurerntData } = useGrdid()
 interface RowVO {
