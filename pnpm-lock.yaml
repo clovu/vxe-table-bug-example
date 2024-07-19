@@ -15,11 +15,11 @@ importers:
         specifier: ^4.4.0
         version: 4.4.0(vue@3.4.32(typescript@5.5.3))
       vxe-pc-ui:
-        specifier: ^4.0.72
-        version: 4.0.72
+        specifier: ^4.0.76
+        version: 4.0.76
       vxe-table:
-        specifier: ^4.7.53
-        version: 4.7.53
+        specifier: ^4.7.56
+        version: 4.7.56
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.0.5
@@ -476,11 +476,11 @@ packages:
       typescript:
         optional: true
 
-  vxe-pc-ui@4.0.72:
-    resolution: {integrity: sha512-z9Yc9MZ3HmP2rBUIenzcGQAMvQPb9rgsFXstks5mefnS34p4cCTEtxS4IpRIX0YomyRrMyb9edHTdSutbf3gvQ==}
+  vxe-pc-ui@4.0.76:
+    resolution: {integrity: sha512-C0Z+q9kyqwsHsLTy7O6B8+yLquT/XoSJ4GnBJ/FiCkFB03tykWIgQr5DgLpQuOIzemfGxrKguWC++2TdOmEDlA==}
 
-  vxe-table@4.7.53:
-    resolution: {integrity: sha512-WJAaD4LI0igexBGPHrGS1aZn+NCFY+HPbe7x4hlKHM/gUleKlyVv2pEXu/HA2Jo+IRMmj4s6WevgX3VvrY1k7g==}
+  vxe-table@4.7.56:
+    resolution: {integrity: sha512-SE9AWPiLTrWYzikVDzhI3JiKBZ63nP5f+QU1ATdPCZMSReDBgHJWlnQbMcLJRrhQyp0KXHdoibdLNzIUJG0iCQ==}
 
   xe-utils@3.5.28:
     resolution: {integrity: sha512-oeLLJ0b54QdOSSgYQ9TiKW/xAGrc9r0weCA/5UfyGdm3n3js4cNOuuf9Tml7UwgBQpl4uWMbMwUZKLh2yqPF3A==}
@@ -851,12 +851,12 @@ snapshots:
     optionalDependencies:
       typescript: 5.5.3
 
-  vxe-pc-ui@4.0.72:
+  vxe-pc-ui@4.0.76:
     dependencies:
       '@vxe-ui/core': 1.0.12
 
-  vxe-table@4.7.53:
+  vxe-table@4.7.56:
     dependencies:
-      vxe-pc-ui: 4.0.72
+      vxe-pc-ui: 4.0.76
 
   xe-utils@3.5.28: {}

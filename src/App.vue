@@ -18,7 +18,7 @@ enum IssueStatus {
 }
 
 const dataSource = reactive([
-  {issue: 2320, status: IssueStatus.Wontfix, pr: 2428, desc: "TreeTable 懒加载数据首次新增行时出现重复数据", },
+  {issue: 2320, status: IssueStatus.Fix, pr: 2428, desc: "TreeTable 懒加载数据首次新增行时出现重复数据 (4.7.56 修复)", },
   {issue: 2479, status: IssueStatus.Wontfix, pr: null, desc: "如果存在新增数据, getRowIndex 函数返回的序号错误" },
 ])
 
