@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { onErrorCaptured, ref } from 'vue';
+import { reactive, onErrorCaptured } from 'vue';
 import { VxeGrid, VxeTablePropTypes, } from 'vxe-table';
 import { VxeButton, VxeUI } from 'vxe-pc-ui';
 
-const menuConfig = ref<VxeTablePropTypes.MenuConfig | undefined>({
+const menuConfig = reactive<VxeTablePropTypes.MenuConfig>({
   enabled: true,
   body: {
     options: [[{ name: '删除', code: 'remove' }]],
@@ -11,7 +11,7 @@ const menuConfig = ref<VxeTablePropTypes.MenuConfig | undefined>({
 })
 
 function toggleMenuEnabled() {
-  menuConfig.value = undefined
+  menuConfig.enabled = !menuConfig.enabled
 }
 
 onErrorCaptured((error) => {
@@ -28,7 +28,7 @@ onErrorCaptured((error) => {
 
 <template>
   <div>
-    <VxeButton @click="toggleMenuEnabled" v-if="menuConfig?.enabled">禁止右键菜单</VxeButton>
+    <VxeButton @click="toggleMenuEnabled" v-if="menuConfig.enabled">禁止右键菜单</VxeButton>
     <VxeButton @click="toggleMenuEnabled" v-else>开启右键菜单</VxeButton>
 
     <div style="height: 10px;"></div>
