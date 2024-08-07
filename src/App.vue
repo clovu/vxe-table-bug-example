@@ -4,6 +4,11 @@ import { useRouter } from 'vue-router';
 import { VxeTag, VxeTagPropTypes } from 'vxe-pc-ui';
 import { VxeGrid, VxeGridPropTypes } from 'vxe-table';
 
+import packageJson from '../package.json';
+
+console.log(packageJson.dependencies.vue);
+
+
 const columns = reactive<VxeGridPropTypes.Columns>([
   { title: 'Issue', width: 70, slots: { default: 'github-issue-url' } },
   { title: 'Issue Status', width: 110, slots: { default: 'status' } },
@@ -46,6 +51,14 @@ const MatchStatusText = {
     <a href="https://github.com/Clover-You/vxe-table-bug-example" target="_blank">
       <img src="https://img.shields.io/github/stars/clover-you/vxe-table-bug-example.svg" />
     </a>
+
+    <p>当前项目关键依赖版本信息: </p>
+
+    <div class="dependencie-info">
+      <span>Vue: {{ packageJson.dependencies.vue }}</span>
+      <span>VxePcUI: {{ packageJson.dependencies['vxe-pc-ui'] }}</span>
+      <span>VxeTable: {{ packageJson.dependencies['vxe-table'] }}</span>
+    </div>
   </div>
 
   <router-view />
@@ -76,3 +89,14 @@ const MatchStatusText = {
     </template>
   </VxeGrid>
 </template>
+
+<style lang="css" scoped>
+.dependencie-info {
+  margin-bottom: 20px;
+}
+
+.dependencie-info span {
+  padding: 10px;
+  border: 1px solid #eee;
+}
+</style>
