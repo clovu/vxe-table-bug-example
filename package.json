@@ -9,15 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.32",
-    "vue-router": "^4.4.0",
-    "vxe-pc-ui": "^4.0.76",
-    "vxe-table": "^4.7.56"
+    "vue": "^3.4.36",
+    "vue-router": "^4.4.3",
+    "vxe-pc-ui": "^4.0.90",
+    "vxe-table": "^4.7.61"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.5",
-    "typescript": "^5.5.3",
-    "vite": "^5.3.4",
-    "vue-tsc": "^2.0.26"
+    "@vitejs/plugin-vue": "^5.1.2",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5",
+    "vue-tsc": "^2.0.29"
   }
 }

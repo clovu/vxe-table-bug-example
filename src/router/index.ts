@@ -15,6 +15,11 @@ const router = createRouter({
       // https://github.com/x-extends/vxe-table/issues/2479
       path: '/2479',
       component: () => import('../views/2479.vue')
+    },{
+      // 如果存在新增数据，getRowIndex 函数返回的行号错乱
+      // https://github.com/x-extends/vxe-table/issues/2479
+      path: '/2509',
+      component: () => import('../views/2509.vue')
     }
   ]
 })
