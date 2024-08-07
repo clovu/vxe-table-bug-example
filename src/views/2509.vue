@@ -24,8 +24,6 @@ onErrorCaptured((error) => {
   console.error(error)
   return false
 })
-
-
 </script>
 
 <template>
@@ -34,7 +32,7 @@ onErrorCaptured((error) => {
     <VxeButton @click="toggleMenuEnabled" v-else>禁止右键菜单</VxeButton>
 
     <div style="height: 10px;"></div>
-    
+
     <VxeGrid :menu-config></VxeGrid>
   </div>
 </template>
