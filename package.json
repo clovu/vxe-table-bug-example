@@ -11,13 +11,13 @@
   "dependencies": {
     "vue": "^3.4.36",
     "vue-router": "^4.4.3",
-    "vxe-pc-ui": "^4.0.90",
-    "vxe-table": "^4.7.61"
+    "vxe-pc-ui": "^4.0.91",
+    "vxe-table": "^4.7.62"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",
     "typescript": "^5.5.4",
-    "vite": "^5.3.5",
+    "vite": "^5.4.0",
     "vue-tsc": "^2.0.29"
   }
 }
