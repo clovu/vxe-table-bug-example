@@ -27,6 +27,7 @@ const dataSource = reactive([
   { issue: 2320, status: IssueStatus.Fix, pr: 2428, desc: "TreeTable 懒加载数据首次新增行时出现重复数据 (4.7.56 修复)", },
   { issue: 2479, status: IssueStatus.Close, pr: null, desc: "如果存在新增数据, getRowIndex 函数返回的序号错误 (需使用 getVTRowIndex 函数)" },
   { issue: 2509, status: IssueStatus.Fix, pr: null, desc: "修改 menu-config 配置导致组件发生异常(4.7.62 修复)" },
+  { issue: 2809, status: IssueStatus.Fix, pr: null, desc: "revertData 无法还原被删除的数据" },
 ])
 
 const router = useRouter()
