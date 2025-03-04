@@ -21,11 +21,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "paths": {
-      "vxe-table": [
-        "./node_modules/vxe-table-cfc"
-      ],
-    }
   },
   "include": [
     "src/**/*.ts",
