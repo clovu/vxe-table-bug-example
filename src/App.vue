@@ -49,8 +49,8 @@ const MatchStatusText = {
 
 <template>
   <div>
-    <a href="https://github.com/Clover-You/vxe-table-bug-example" target="_blank">
-      <img src="https://img.shields.io/github/stars/clover-you/vxe-table-bug-example.svg" />
+    <a href="https://github.com/clovu/vxe-table-bug-example" target="_blank">
+      <img src="https://img.shields.io/github/stars/clovu/vxe-table-bug-example.svg" />
     </a>
 
     <p>当前项目关键依赖版本信息: </p>
